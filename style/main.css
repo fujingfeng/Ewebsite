@@ -1,0 +1,66 @@
+/* CSS Document */
+
+/*公用*/
+.comWidth{width:1000px;margin-left:auto;margin-right:auto;}
+.leftArea{float:left;}
+.rightArea{float:right;}
+
+/*topBar*/
+.topBar{height:31px;backgroud-color:#F7F7F7;line-height:31px;}  /*首先，保证元素的padding-top=padding-bottom。然后，当height=line-height时，元素有且只能有一行，行的上下边界与元素的上下边界重叠。又因为，系统默认在一行的中间写，所以，就上下对称了，就垂直居中了。等价于.topBar .leftArea{line-height:31px;}*/
+.collection{background:url(../images/icon/collection.png) left center no-repeat;padding-left:19px;font-weight:bold} /*背景图片x轴在左边，y轴在中间，且不重复;font-weight设置字体为粗体*/
+
+/*logo*/
+.logoBar{height:85px;background-color:#1d7ad9;}
+.logo{padding-left:39px;padding-top:12px;}
+
+/*search*/
+.search_box{width:430px;padding-top:23px;padding-left:185px;}
+.search_text{width:350px;height:35px;padding:0 5px;}  /*padding是为了让输入框左右有一个偏移，不至于顶着边框写*/
+.search_btn{width:70px;height:35px;font-size:14px;font-family:"微软雅黑";background-color:#ff8c00;color:#FFFFFF;}
+
+/*购物车*/
+.shopCar{width:145px;height:35px;background-color:#ff8c00;margin-top:23px;font-size:14px;font-family:"微软雅黑";background-color:#ff8c00;color:#FFFFFF;margin-right:59px;} /*此处只可以用margin-top实现，而不可以用padding-top实现相应效果，原因不详？？*/
+.shopText{/*font-size:14px;font-family:"微软雅黑";background-color:#ff8c00;color:#FFFFFF;*/height:100%;width:87px;border-right:#e27a00 solid 1px;line-height:35px; background:url(../images/icon/shopItem.png) 10px center no-repeat;text-indent:40px;}  /*text-indent让文本向右缩进，前提是shopText设置了左浮动，否则该设置不起作用，原因不详？？*/
+.shopNum{/*font-size:14px;font-family:"微软雅黑";background-color:#ff8c00;color:#FFFFFF;*/height:100%;width:27px;border-left:#ff9c01 solid 1px;line-height:35px;background:url(../images/icon/images/sanjiao_03.png) 33px center no-repeat;text-align:center;padding-right:29px;} /*此处backgroud的left值为33px,如果shopNum未设置右浮动，整个这些背景图片样式无效，原因不详？？*/
+/*由于字体样式在shopText与shopNum中一样，为了避免重复加载，将其写入他们的父级元素，字体样式会被继承*/
+
+/*导航*/
+.navBox{height:35px;background-color:#1369c0; color:#FFFFFF;}
+.shopClass{width:190px;position:relative;}
+.shopClass h3{text-align:center;line-height:35px;}
+.shopClass i{width:14px;height:11px;background:url(../images/icon/images/xiasanjiao_03.png) left center no-repeat;display:inline-block;margin-left:11px;}
+.nav,.shopClass{font-family:"微软雅黑";}
+.nav{line-height:35px;}
+.nav li{float:left;}
+.nav a{height:35px;display:inline-block;padding:0 35px;color:#FFFFFF;}
+.nav .active{background-color:#4593fd;}
+
+
+/*商品弹出列表*/
+.shopClass_show{/* width:189px;height:68px;此处不添加宽度样式，背景依然是正确的显示宽度，因为继承了父级shoClass的样式*/background-color:#4593fd;position:absolute;width:100%;left:0;top:35px;}
+.shopClass_item{padding:14px 10px;border-bottom:#3487F2 solid 1px;border-top:#5aa1fe solid 1px;}
+.shopClass_item dt{height:22px;background:url(../images/icon/images/sanjiao_03.png) right center no-repeat;}
+.shopClass_item .b{font-family:"微软雅黑";font-size:14px;font-weight:bold;}
+.shopClass_item a{color:#FFFFFF;margin-right:9px;}
+.shopClass_item .aLink{display:inline-block;width:50px;height:20px;line-height:20px;text-align:center;text-decoration:underline;background:url(../images/icon/images/aLink_03.png) left center no-repeat;}
+
+/*弹出的菜单*/
+.shopClass_list{width:570px;height:378px;position:absolute;left:190px;top:35px;border:#ccc solid 1px;}
+.shopClass_const{padding:0 20px;}
+.shopList_item{padding:15px 0;border-bottom:#ccc solid 1px;}
+.shopList_item dt{color:#4b87d9;font-weight:bold;height:25px;line-height:25px;}
+.shopList_item dd{padding-left:68px;margin-top:-25px;line-height:25px;}
+.shopList_item dd a{margin-right:12px;}
+.shopList_Links a{color:#FFFFFF;background-color:#2785e6;background:url(../images/icon/images/sanjiao_03.png) left center no-repeat;height:24px;line-height:26px;}
+
+
+
+
+
+
+
+
+
+
+
+
