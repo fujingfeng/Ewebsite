@@ -4,6 +4,8 @@
 .comWidth{width:1000px;margin-left:auto;margin-right:auto;}
 .leftArea{float:left;}
 .rightArea{float:right;}
+.hide{display:none;}
+.show{display:block;}
 
 /*topBar*/
 .topBar{height:31px;backgroud-color:#F7F7F7;line-height:31px;}  /*首先，保证元素的padding-top=padding-bottom。然后，当height=line-height时，元素有且只能有一行，行的上下边界与元素的上下边界重叠。又因为，系统默认在一行的中间写，所以，就上下对称了，就垂直居中了。等价于.topBar .leftArea{line-height:31px;}*/
@@ -29,7 +31,7 @@
 .shopClass{width:190px;position:relative;}
 .shopClass h3{text-align:center;line-height:35px;}
 .shopClass i{width:14px;height:11px;background:url(../images/icon/images/xiasanjiao_03.png) left center no-repeat;display:inline-block;margin-left:11px;}
-.nav,.shopClass{font-family:"微软雅黑";}
+.nav,.shopClass h3{font-family:"微软雅黑";}
 .nav{line-height:35px;}
 .nav li{float:left;}
 .nav a{height:35px;display:inline-block;padding:0 35px;color:#FFFFFF;}
@@ -42,17 +44,25 @@
 .shopClass_item dt{height:22px;background:url(../images/icon/images/sanjiao_03.png) right center no-repeat;}
 .shopClass_item .b{font-family:"微软雅黑";font-size:14px;font-weight:bold;}
 .shopClass_item a{color:#FFFFFF;margin-right:9px;}
+.shopClass_item a:hover{text-decoration:underline;}
 .shopClass_item .aLink{display:inline-block;width:50px;height:20px;line-height:20px;text-align:center;text-decoration:underline;background:url(../images/icon/images/aLink_03.png) left center no-repeat;}
 
+/*shopClass_item active 状态*/
+.shopClass_active{background-color:#FFFFFF;border-left:1px solid #4593fd}
+.shopClass_active a{color:#000000;}
+.shopClass_active .aLink{color:#FFFFFF;text-decoration:none;}
+.shopClass_active dt{background:none;}
+
 /*弹出的菜单*/
-.shopClass_list{width:570px;height:378px;position:absolute;left:190px;top:35px;border:#ccc solid 1px;}
+.shopClass_list{width:570px;/*height:378px;将其删掉，实现自适应*/position:absolute;left:190px;top:35px;border:#ccc solid 1px;}
 .shopClass_const{padding:0 20px;}
 .shopList_item{padding:15px 0;border-bottom:#ccc solid 1px;}
 .shopList_item dt{color:#4b87d9;font-weight:bold;height:25px;line-height:25px;}
 .shopList_item dd{padding-left:68px;margin-top:-25px;line-height:25px;}
 .shopList_item dd a{margin-right:12px;}
-.shopList_Links a{color:#FFFFFF;background-color:#2785e6;background:url(../images/icon/images/sanjiao_03.png) left center no-repeat;height:24px;line-height:26px;}
-
+.shopList_Links{padding:15px 0;}
+.shopList_Links a{color:#FFFFFF;background-color:#4593fd;display:inline-block;height:26px;line-height:26px;padding:0 14px 0 8px;margin-right:10px;/*background:url(../images/icon/images/aSanjiao_03.png) right center no-repeat;在a标签处添加背景，会遮挡住整个a标签，只显示背景图片，原因不详？？*/}
+.shopList_Links span{background:url(../images/icon/images/aSanjiao_03.png) right center no-repeat;width:11px;height:7px;display:inline-block;margin-left:7px;}
 
 
 
